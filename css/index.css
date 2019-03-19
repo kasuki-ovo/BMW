@@ -1,0 +1,1103 @@
+nav{
+	width: 100%;
+	background: #8e8e8e;
+	padding: 0 37.5px;
+	position: relative;
+}
+.head{
+	width: 100%;
+    max-width: 104.5rem;
+    position: relative;
+    overflow: hidden;
+    transition: all .5s ease;
+    height: 100px;
+    padding: 0 27.5px;
+}
+.max-nav{
+	overflow: hidden;
+}
+@font-face{
+	  font-family: 'iconfont';
+	  src: url('font/iconfont.eot');
+	  src: url('font/iconfont.eot?#iefix') format('embedded-opentype'),
+	   url('font/iconfont.woff2') format('woff2'),
+	   url('font/iconfont.woff') format('woff'),
+	   url('font/iconfont.ttf') format('truetype'),
+	   url('font/iconfont.svg#iconfont') format('svg');
+}
+.iconfont{
+    font-family:"iconfont" !important;
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+    vertical-align: middle;
+}
+.head-top{
+    margin-top: 30px;
+    line-height: 1.25rem;
+    width: 100%;
+}
+.head-bottom{
+	margin-top: 16px;
+	margin-bottom: 15px;
+	width: 100%;
+}
+.head-bottom a{
+	font-size: 17px;
+}
+.head-bottom a.on{
+	color: #0653B6;
+}
+.link{
+	padding-left: 30px;
+	position: relative;
+}
+.search{
+	padding-left: 30px;
+	position: relative;
+}
+a.fast-link::before{
+	content: '';
+	width: 23px;
+    height: 23px;
+	background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2245%22%20height%3D%2245%22%20viewBox%3D%220%200%2045%2045%22%3E%3Cg%20fill%3D%22%23fff%22%3E%3Cpath%20d%3D%22M21.948%2027.125h-.35c-.738.406-1.764%201.22-2.9%201.22s-2.162-.813-2.9-1.22h-.35c-1.788%200-3.448%201.284-3.448%203.07V32h13v-1.804c0-1.787-1.264-3.07-3.052-3.07zM18.558%2025C19.938%2025%2021%2023.657%2021%2022s-1.062-3-2.442-3c-1.38%200-2.5%201.343-2.5%203s1.12%203%202.5%203zM33%2013H23v11h3v3l3-3h4V13zm-4%209h-2v-4h2v4zm0-5h-2v-2h2v2z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: -10px -13px;
+	position: absolute;
+	top: 0;
+	left: 0;	
+}
+a.fast-link::after{
+	content: '';
+	width: 23px;
+    height: 23px;
+	background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2245%22%20height%3D%2245%22%20viewBox%3D%220%200%2045%2045%22%3E%3Cg%20fill%3D%22%230653B6%22%3E%3Cpath%20d%3D%22M21.948%2027.125h-.35c-.738.406-1.764%201.22-2.9%201.22s-2.162-.813-2.9-1.22h-.35c-1.788%200-3.448%201.284-3.448%203.07V32h13v-1.804c0-1.787-1.264-3.07-3.052-3.07zM18.558%2025C19.938%2025%2021%2023.657%2021%2022s-1.062-3-2.442-3c-1.38%200-2.5%201.343-2.5%203s1.12%203%202.5%203zM33%2013H23v11h3v3l3-3h4V13zm-4%209h-2v-4h2v4zm0-5h-2v-2h2v2z%22%2F%3E%3C%2Fg%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: -10px -13px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: .25s;
+}
+.search a.fast-link::before{
+	content: '';
+	width: 23px;
+    height: 23px;
+	background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2245%22%20height%3D%2245%22%20viewBox%3D%220%200%2045%2045%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M32%2029.75l-5.417-5.416c1.823-2.852%201.458-6.65-1-9.174-2.75-2.826-7.545-2.88-10.424%200-2.88%202.88-2.88%207.545%200%2010.424%202.49%202.492%206.32%202.822%209.173%201L29.75%2032%2032%2029.75zm-14.937-6.07c-1.827-1.828-1.827-4.79%200-6.617s4.79-1.827%206.616%200%201.826%204.79%200%206.616c-1.828%201.826-4.79%201.826-6.617%200z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: -10px -13px;
+	position: absolute;
+	top: 0;
+	left: 0;	
+}
+.search a.fast-link::after{
+	content: '';
+	width: 23px;
+    height: 23px;
+	background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2245%22%20height%3D%2245%22%20viewBox%3D%220%200%2045%2045%22%3E%3Cpath%20fill%3D%22%230653B6%22%20d%3D%22M32%2029.75l-5.417-5.416c1.823-2.852%201.458-6.65-1-9.174-2.75-2.826-7.545-2.88-10.424%200-2.88%202.88-2.88%207.545%200%2010.424%202.49%202.492%206.32%202.822%209.173%201L29.75%2032%2032%2029.75zm-14.937-6.07c-1.827-1.828-1.827-4.79%200-6.617s4.79-1.827%206.616%200%201.826%204.79%200%206.616c-1.828%201.826-4.79%201.826-6.617%200z%22%2F%3E%3C%2Fsvg%3E");
+    background-repeat: no-repeat;
+    background-position: -10px -13px;
+	position: absolute;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	transition: .25s;
+}
+.link:hover a.fast-link:after{
+	opacity: 1;
+}
+.search:hover a.fast-link:after{
+	opacity: 1;
+}
+.head ul{
+	overflow: hidden;
+	color: #fff;
+	margin-left: 20px;
+}
+.head ul li{
+	float: left;
+	margin-right: 20px;
+}
+.head ul li a{
+	color: #fff;
+	transition: .25s;
+}
+.head .iconfont{
+	font-size:21px;
+	transition: .25s;
+	line-height: 19px;
+	color: #fff;
+}
+a:hover{
+	text-decoration: none;
+}
+a:active{
+	text-decoration: none;
+}
+a:link{
+	text-decoration: none;
+}
+.head ul li:hover a{
+	color: #0653B6;
+}
+.head ul li:hover .iconfont{
+	color: #0653B6;
+}
+.head ul li a:hover{
+	color: #0653b6;
+}
+.hide-nav{
+	margin: 10px 0;
+	display: none;
+	transition: 1s;
+}
+
+.hide-nav a{
+	font-size: 15px;
+}
+.navigation a.on{
+	color: #0653B6;
+}
+.navigation span.on{
+	color: #0653B6;
+}
+.bmw-logo{
+	z-index: 1100;
+}
+.bmw-logo img{
+	width: 103px;
+	position: absolute;
+	top: 10px;
+	right: 50.5px;
+	z-index: 1100;
+}
+.list-link{
+	display: none;
+}
+.list-ul{
+	overflow: hidden;
+	margin-left: 472px;
+}
+.list-ul li{
+	line-height: 17px;
+    margin: 12px 0;
+}
+.list-ul a{
+	color: #fff;
+}
+.list-ul a:hover{
+	color: #0653B6;
+}
+.nav-link{
+	display: none;
+}
+.nav-ul{
+	overflow: hidden;
+	margin-left: 0px;
+}
+.nav-ul li{
+	line-height: 1.85rem;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid #bbb;
+    margin: 0;
+    padding-left: 20px;
+}
+.nav-ul li.on{
+	border-top: 1px solid #bbb;
+}
+.nav-ul li.on a{
+	color: #0653B6;
+}
+.nav-ul a{
+	color: #fff;
+}
+.nav-ul a:hover{
+	color: #0653B6;
+}
+.fix-search{
+	width: 100%;
+	height: 50px;
+	background: #8e8e8e;
+	overflow: hidden;
+	position: absolute;
+	top: 100%;
+	left: 0;
+	z-index: 1000;
+	display: none;
+}
+.fix-ul{
+	float: right;
+	padding: 0 27.5px;
+}
+.fix-ul li{
+	float: left;
+}
+
+.fix-ul li a{
+	display: block;
+	width: 210px;
+	background: #666;
+    min-width: 180px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    text-indent: 15px;
+    position: relative;
+    margin: 5px 5px 5px 0;
+}
+.fix-search a.fast-link::before{
+    top: 50%;
+    transform: translateY(-50%);
+	left: initial;
+
+}
+.fix-search .fast-link .txt{
+    margin-left: 32px;
+}
+.fix-search a.fast-link::after{
+	content: '';
+	position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+	left: initial;
+    right: 10px;
+    background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M11.997%2017l2-2%206%206.002%206-6%202%202-8%208z%22%2F%3E%3C%2Fsvg%3E");
+    background-position: -3px -5px;
+    background-size: 30px;
+	opacity: 1;
+}
+.fix-search .mid-link a.fast-link::after{
+	display: none;
+}
+.fix-search .fast-link:hover{
+	background: #4d4d4d;
+}
+.fix-ul .mid-link .fast-link{
+	background: #666;
+	border-left: 1px solid #FFF;
+	display: none;
+}
+.fix-ul .mid-link .fast-link:hover{
+	background: #4d4d4d;
+}
+.fix-ul .fix-order{
+	text-align: center;
+	background: #1c69d4;
+}
+.fix-ul .fix-order:hover{
+    background: #0653b6;
+}
+main{
+	width: 100%;
+}
+.ppt{
+	width: 100%;
+	z-index: 100;
+	overflow: hidden;
+	margin-bottom: 40px;
+}
+.carousel{
+	width: 100%;
+	max-width: 1680px;
+	margin: 0 auto;
+	position: relative;
+}
+.ppt img{
+	max-width: 100%;
+}
+.ppt ul{
+	width: 19999px;
+	overflow: hidden;
+	position: relative;
+}
+.parent{
+	float: left;
+	position: relative;
+}
+.ppt-txt{
+	position: absolute;
+	width: 80%;
+    left: 8%;
+    top: 8%;
+    color: #fff;
+}
+.ppt-txt h1{
+	font-size: 37px;
+	margin-bottom: 13px;
+	font-weight: bold;
+}
+.ppt-txt h3{
+    font-size: 25px;
+	margin-bottom: 13px;
+	font-weight: bold;
+}
+.ppt-txt a{
+    display: block;
+    font-weight: bold;
+    max-width: 285px;
+    color: #fff;
+    line-height: 50px;
+    height: 50px;
+    background-color: #1c69d4;
+    border-color: #0653b6;
+    text-align: center;
+    transition: .25s;
+}
+.ppt-txt a:hover{
+    background-color: #0653b6;
+}
+
+.carousel ol{
+	width: 100%;
+	max-width: 1680px;
+	margin: 5px auto 0;
+	overflow: hidden;
+	position: relative;
+	transition: .25s;
+}
+.carousel ol li{
+	float: left;
+	width: 16.66666667%;
+	height: 5px;
+}
+.carousel ol li.on{
+	background: #0653B6;
+}
+.mid-txt{
+	width: 19990px;
+	position: relative;
+}
+.mid-contain{
+	float: left;
+	max-width: 1680px;
+}
+.mid-txt .ppt-txt{
+	float: left;
+	color: #000;
+	width: 100%;
+	padding: 0 40px;
+	position: initial;
+	display: none;
+}
+.carousel .ppt-img{
+	position: relative;
+}
+.carousel button{
+	position: absolute;
+	min-width: 40px;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	opacity: 0;
+	transition: .25s;
+}
+.ppt-img:hover .lf{
+	opacity: 1;
+}
+.ppt-img:hover .rig{
+	opacity: 1;
+}
+.carousel span{
+	position: relative;
+}
+.carousel .left::before{
+	content: '';
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: -20px;
+	background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M23%2012l2%202-6%206%206%206-2%202-8-8z%22%2F%3E%3C%2Fsvg%3E");
+	background-size: 50px;
+    background-position: center;
+    background-color: rgba(200,200,200,.6);
+}
+.carousel button:hover .left::before{
+    background-color: rgba(200,200,200,.8);
+}
+.carousel button:hover .right::before{
+    background-color: rgba(200,200,200,.8);
+}
+.carousel .right::before{
+	content: '';
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: -20px;
+	background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M17%2028l-2-2%206-6-6-6%202-2%208%208z%22%2F%3E%3C%2Fsvg%3E");
+	background-size: 50px;
+    background-position: center;
+    background-color: rgba(200,200,200,.6);
+}
+
+.carousel .lf{
+	top: 0;
+	left: 0;
+}
+.carousel .rig{
+	top: 0;
+	right: 0;
+}
+.fix-wechat{
+	position: fixed;
+	top: 200px;
+	right: 0;
+	z-index: 1000;
+}
+.fix-wechat a{
+	display: block;
+	width: 40px;
+	height: 40px;
+	background: url(../img/icon_chat.jpg) no-repeat;
+	background-position: left top;
+    background-size: 100%;
+}
+section{
+	width: 100%;
+}
+.cartype{
+	width: 100%;
+    padding-left: 27.5px;
+    padding-right: 27.5px;
+}
+.bg-icon{
+	background: #8e8e8e;
+	font-size: 10rem;
+	color: #aaa;
+}
+
+.transp{
+	opacity: 0;
+}
+.car-list{
+	width: 100%;
+	overflow: hidden;
+	padding: 0 10px 0 15px;
+	margin-bottom: 85px;
+}
+.car-list li{
+	width: 16.6666666667%;
+	cursor: pointer;
+	margin: 0 0px 5px 0;
+	padding-right: 5px;
+	padding-left: 0;
+	line-height: initial;
+}
+.cont{
+	width: 100%;
+	background: #8e8e8e;
+	border: 1px solid #8e8e8e;
+}
+.cont.on{
+	background: #fff;
+}
+.car-list .blue.act{
+	color: #0653B6;
+}
+.car-list .hover .cont:hover{
+	background: #fff;
+}
+.car-list li:hover .blue{
+	color: #0653B6;
+}
+.car-list li img{
+	width: 100%;
+}
+.car-list .parent p{
+	position: absolute;
+	color: #fff;
+    bottom: 10px;
+    padding-left: 15px;
+    padding-right: 20px;
+}
+.car-list .hide-list{
+	width: 100%;
+	overflow: hidden;
+	display: none;
+}
+.car-list .hide-list img{
+	width: 100%;
+}
+.car-list .hide-list ul{
+	width: 100%;
+	overflow: hidden;
+	margin-top: 15px;
+}
+.car-list .hide-list li{
+	width: 25%;
+	float: left;
+}
+.hide-txt{
+	width: 100%;
+	margin-top: 15px;
+}
+.hide-txt a{
+	color: #666;
+}
+.hide-list .contain{
+	height: 240.375px;
+	padding: 0;
+	border: 0;
+	margin-bottom: 0;
+}
+.hide-list .contain .d-img{
+	float: none;
+	width: 100%;
+}
+.hide-list .contain .h2-box h2{
+	margin: 5px 0;
+	font-size: 18px;
+	letter-spacing: 0;
+}
+.hide-list .contain .h2-box h3{
+	font-size: 14px;
+	font-weight: bold;
+}
+.hide-list .contain .d-txt{
+	padding-left: 0;
+}
+.row-padding{
+	padding: 0 17.5px;
+	max-width: 104.5rem;
+	margin: 0 auto;
+}
+.car-intro{
+	padding: 0 10px 0 15px;
+	position: relative;
+}
+.h2-box{
+	margin-bottom: 15px;
+}
+.h2-box h2{
+	margin: 30px 0 12px 0;
+	padding-right: 15px;
+	letter-spacing: -1.575px;
+	font-size: 25px;
+	font-weight: bold;
+	color: #262626;
+}
+.bmw-title a{
+	display: inline-block;
+	color: #666;
+    margin-right: 7.5px;
+    min-width: 10px;
+    width: 16.666667%;
+    font-weight: bold;
+    border-bottom: 5px solid #e6e6e6;
+    cursor: pointer;
+}
+.bmw-title a:hover{
+	border-bottom: 5px solid #1c69d4;
+    color: #1c69d4;
+}
+.bmw-title p{
+    line-height: 17px;
+    margin: 6px 3px;
+}
+.bmw-title .button{
+    border-bottom: 5px solid #1c69d4;
+    color: #1c69d4;
+}
+.details{
+	margin-top: 15px;
+}
+.d-img{
+	width: 50%;
+	padding: 0 .567rem;
+	float: left;
+}
+.d-img img{
+	width: 100%;
+}
+.d-txt{
+	width: 50%;
+	float: left;
+	padding-left: 10px;
+	color: #262626;
+	position: relative;
+}
+.d-txt p{
+	margin-bottom: 10px;
+}
+.d-txt .understand{
+	color: #262626;
+	position: relative;
+	padding-left: 13px;
+}
+.d-txt .understand::before{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M17%2028l-2-2%206-6-6-6%202-2%208%208z%22%2F%3E%3C%2Fsvg%3E");
+	background-repeat: no-repeat;
+	background-position: -10px -7px;
+	background-size: 30px;
+}
+.d-txt .understand::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 20px;
+	height: 20px;
+    background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cpath%20fill%3D%22%230653B6%22%20d%3D%22M17%2028l-2-2%206-6-6-6%202-2%208%208z%22%2F%3E%3C%2Fsvg%3E");
+	background-repeat: no-repeat;
+	background-position: -8px -7px;
+	background-size: 30px;
+	display: none;
+}
+.d-txt .understand:hover{
+	color: #0653B6;
+}
+.d-txt .understand:hover:after{
+	display: block;
+}
+.d-txt .understand:hover:before{
+	display: none;
+}
+.arrow{
+	display: none;
+	width: 100%;
+	height: 40px;
+	text-align: center;
+	margin-bottom: 10px;
+}
+.arrow span{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	position: relative;
+}
+.arrow span::before{
+	position: absolute;
+	top: -10px;
+	left: 0;
+	content: '';
+	width: 30px;
+	height: 30px;
+	background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cpath%20fill%3D%22%23666%22%20d%3D%22M11.997%2017l2-2%206%206.002%206-6%202%202-8%208z%22%2F%3E%3C%2Fsvg%3E");
+	background-position: 0 12px;
+	background-repeat: no-repeat;
+	background-size: 30px auto;
+}
+.arrow span::after{
+	position: absolute;
+	top: 0;
+	left: 0;
+	content: '';
+	width: 30px;
+	height: 30px;
+	background-image: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cpath%20fill%3D%22%230653B6%22%20d%3D%22M11.997%2017l2-2%206%206.002%206-6%202%202-8%208z%22%2F%3E%3C%2Fsvg%3E");
+	background-position: 0 12px;
+	background-repeat: no-repeat;
+	background-size: 30px auto;
+	display: none;
+}
+.arrow span:hover:before{
+	display: none;
+}
+.arrow span:hover:after{
+	display: block;
+}
+.bmw-finance{
+    position: relative;
+    padding-left: 27.5px;
+    padding-right: 32.5px;
+}
+.bmw-finance button{
+	position: absolute;
+	top: 170px;
+    width: 30px;
+    height: 60px;
+    border: none;
+    outline: none;
+	
+}
+.bmw-finance .left{
+	left: -20px;
+}
+.bmw-finance .left::before{
+	content: '';
+	width: 30px;
+    height: 30px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M23%2012l2%202-6%206%206%206-2%202-8-8z%22%2F%3E%3C%2Fsvg%3E");
+	background-size: 50px;
+    background-position: center;
+}
+.bmw-finance .left::after{
+	content: '';
+	width: 30px;
+    height: 30px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%2047.5%2040%2040%22%20enable-background%3D%22new%200%2047.5%2040%2040%22%3E%3Cpath%20fill%3D%22%23262626%22%20d%3D%22M23.234%2076.485l2.514-2.51-6.477-6.473%206.48-6.475-2.516-2.512-8.984%208.987z%22%2F%3E%3C%2Fsvg%3E");
+	background-size: 50px;
+    background-position: center;
+    display: none;
+}
+.bmw-finance .left:hover:after{
+	display: block;
+}
+.bmw-finance .right{
+	right: -26px;
+}
+.bmw-finance .right::before{
+	content: '';
+	width: 30px;
+    height: 30px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M17%2028l-2-2%206-6-6-6%202-2%208%208z%22%2F%3E%3C%2Fsvg%3E");
+	background-size: 50px;
+    background-position: center;
+}
+.bmw-finance .right::after{
+	content: '';
+	width: 30px;
+    height: 30px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%2047.5%2040%2040%22%20enable-background%3D%22new%200%2047.5%2040%2040%22%3E%3Cpath%20fill%3D%22%23262626%22%20d%3D%22M16.766%2058.515l-2.514%202.51L20.73%2067.5l-6.48%206.473%202.516%202.512L25.75%2067.5z%22%2F%3E%3C%2Fsvg%3E");
+	background-size: 50px;
+    background-position: center;
+    display: none;
+}
+.bmw-finance .right:hover:after{
+	display: block;
+}
+.hjs-lg-6{
+	width: 50%;
+	padding: 0 .567rem;
+	float: left;
+	margin-top: 85px;
+}
+.contain{
+	width: 100%;
+	padding: 15px;
+	border: 1px solid #e6e6e6;
+	margin-bottom: 90px;
+}
+.hjs-lg-6 .d-img{
+	width: 100%;
+	padding: 0;
+	float: none;
+}
+.hjs-lg-6 .d-txt{
+	width: 100%;
+	padding: 0;
+	float: none;
+}
+.hjs-lg-6 .h2-box{
+	margin: 10px 0;
+}
+.hjs-lg-6 .h2-box h2{
+	margin: 0;
+}
+.hjs-lg-3{
+	width: 25%;
+	margin-top: 0;
+}
+.hjs-lg-3 .h2-box{
+	margin: 10px 0 5px 0;
+}
+.hjs-lg-3 p{
+	margin-bottom: 6px;
+}
+footer{
+	background: #8e8e8e;
+}
+.footer{
+	padding: 26px 37.5px 25px 27.5px;
+	color: #fff;
+	line-height: normal;
+}
+aside{
+	display: table-row;
+}
+.footer a{
+	color: #fff;
+}
+.footer a:hover{
+	color: #0653B6;
+}
+.footer h5{
+	float: left;
+	line-height: normal;
+	font-weight: bold;
+    padding-right: 49px;
+    padding-bottom: 23px;
+    min-width: 140px;
+}
+.footer ul{
+	overflow: hidden;
+}
+.footer ul li{
+	float: left;
+	margin: 0 15px 8px 0;
+    vertical-align: top;
+}
+hr{
+	border-color: #bbb;
+	margin-top: 0;
+	margin-bottom: 13px;
+}
+.copy{
+	font-size: 15px;
+	text-align: right;
+	line-height: 1.5;
+}
+@media (max-width: 1280px) {
+	.head-bottom .txt.txt-link{
+		display: none;
+	}
+	.link{
+		padding: 10px;
+	}
+	.head-bottom .txt.txt-search{
+		display: none;
+	}
+	.list-ul{
+		margin-left: 450px;
+	}
+	.row-padding{
+		padding: 0;
+	}
+	
+}
+@media (max-width: 1024px) {
+	.max-nav{
+		display: none;
+	}
+	.hide-nav{
+		display: block;
+	}
+	.link{
+		padding: 0;
+		padding-left: 30px;
+	}
+	.bmw-logo{
+		display: none;
+	}
+	.head .iconfont{
+	line-height: 25px;
+	}
+	.list-ul{
+		margin-left: 0px;
+		font-size: 1.5375rem;
+	}
+	.list-ul li{
+		line-height: 1.85rem;
+	    padding-top: 11px;
+	    padding-bottom: 11px;
+	    border-bottom: 1px solid #bbb;
+	    margin: 0;
+	    padding-left: 20px;
+	}
+	nav{
+		padding: 0;
+	}
+	.head{
+		height: auto;
+		padding: 0;
+	}
+}
+@media (max-width: 981px) {
+	.fix-search{
+		background: #666;
+	}
+	.fix-ul{
+		padding: 0;
+	}
+	.fix-ul .mid-link .fast-link{
+		display: block;
+	}
+	.lg-link{
+		display: none;
+	}
+	.parent .ppt-txt{
+		display: none;
+	}
+	.mid-txt .ppt-txt{
+		display: block;
+		
+	}
+	.ppt-txt h1{
+		margin-top: 28px;
+	}
+	.ppt-txt h3{
+		font-size: 20px;
+	}
+	.ppt-txt a{
+		max-width: 50%;
+	}
+	.car-list li{
+	 width: 25%;
+	}
+	.d-img{
+		width: 100%;
+	}
+	.d-img{
+		padding: 0;
+	}
+	.d-txt{
+		width: 100%;
+		margin-top: 10px;
+		padding: 0;
+	}
+	.bmw-finance .left{
+		top: 220px;
+	}
+	.bmw-finance .right{
+		top: 220px;
+	}
+	.hjs-lg-6{
+		width: 100%;
+		margin-bottom: 0;
+	}
+	.hjs-lg-6.magtop{
+		margin-top: 0;
+	}
+	.hjs-md-6{
+		width: 50%;
+	}
+	.footer .footer-tab h5{
+		font-size: 15px;
+	}
+	.footer .footer-tab ul{
+		padding-bottom: 13px;
+		font-size: 15px;
+	}
+}
+@media (max-width: 901px) {
+	.car-type{
+		display: none;
+	}
+}
+
+@media (max-width: 768px) {
+	.hjs-lg-6{
+		margin-top: 40px;
+	}
+	.hjs-lg-6 .contain{
+		margin-bottom: 30px;
+	}
+	.hjs-md-6{
+		margin-top: 0;
+	}
+}
+@media (max-width: 751px) {
+	.fix-wechat{
+		display: none;
+	}
+}
+@media (max-width: 721px) {
+	.txt{
+		display: none;
+	}
+	.link{
+		padding: 10px;
+	}
+}
+@media (max-width: 521px) {
+	.ppt-txt{
+		padding: 0 10px;
+	}
+	.ppt-txt a{
+		max-width: 100%;
+	}
+	.ppt-txt h1{
+		font-size: 25px;
+	}
+	.car-list li{
+	 	width: 50%;
+	}
+	.cartype{
+	    padding-left: 2.5px;
+	    padding-right: 2.5px;
+	}
+	.bmw-title p{
+		display: none;
+	}
+	.d-txt p{
+	    -webkit-mask-image: -webkit-linear-gradient(bottom,transparent 0,transparent 0,#000 50px);
+	}
+	.arrow{
+		display: block;
+	}
+	.h2-box{
+		margin-bottom: 0;
+	}
+	.h2-box h2{
+		margin-bottom: 0;
+	}
+	.bmw-finance{
+		padding: 0 7.5px 0 2.5px;
+	}
+	.bmw-finance button{
+		width: 18px;
+		height: 40px;
+		top: 140px;
+	}
+	.bmw-finance .left{
+		left: -17px;
+	}
+	.bmw-finance .left::before{
+		left: -7px;
+	}
+	.bmw-finance .left::after{
+		left: -7px;
+	}
+	.bmw-finance .right{
+		right: -22px;
+	}
+	.bmw-finance .right::before{
+		left: -5px;
+	}
+	.bmw-finance .right::after{
+		left: -5px;
+	}
+	.hjs-lg-6 .d-txt p{
+	    -webkit-mask-image: none;
+	}
+	.hjs-xs-12{
+		width: 100%;
+	}
+	.footer{
+		padding: 26px 7.5px 25px 2.5px;
+	}
+	.footer h5{
+		float: none;
+		padding-bottom: 8px;
+	}
+	.footer .footer-tab ul{
+		padding: 0;
+		margin-bottom: 27px;
+	}
+	.copy{
+		font-size: .8rem;
+	}
+}
+
+
