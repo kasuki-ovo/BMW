@@ -489,13 +489,22 @@ section{
 	overflow: hidden;
 	padding: 0 10px 0 15px;
 }
-.car-list li{
-	width: 100%;
+.car-list.txt-list li{
+	width: 16.6666667%;
 	margin: 0 0px 5px 0;
 	padding-right: 5px;
 	padding-left: 0;
 	line-height: initial;
 	text-align: center;
+	overflow: hidden;
+}
+.txt-list{
+	width: 600%;
+	position: relative;
+	transition: .25s;
+}
+.car-list.txt-list li{
+	float: left;
 }
 .car-list li h1{
 	font-size: 35px;
@@ -627,6 +636,7 @@ ol li{
     border-radius: 100%;
     background: #000;
     opacity: .2;
+	cursor: pointer;
 }
 ol li.on{
 	background: #007aff;
@@ -866,7 +876,7 @@ ol li.on{
     background-position: center;
     display: none;
 }
-.bmw-finance.has-btn .left:hover:after{
+.bmw-finance.has-btn button.left:hover:after{
 	display: block;
 }
 .bmw-finance .right{
@@ -884,7 +894,7 @@ ol li.on{
 	background-size: 50px;
     background-position: center;
 }
-.bmw-finance.has-btn .right::after{
+.bmw-finance.has-btn button.right::after{
 	content: '';
 	width: 30px;
     height: 30px;
@@ -913,18 +923,20 @@ ol li.on{
 	display: inline-block;
 }
 .cartype-img ul{
-	width: 99999px;
-	display: flex;
+	width: 1300%;
+	/* display: flex; */
 	overflow: hidden;
+	transform: translate3d(-2.1%,0,0);
+	position: relative;
 }
 .cartype-img ul li{
+	width: 3%;
 	float: left;
 	position: relative;
 }
 .cartype-img span{
 	display: inline-block;
 	margin: 0 7.5px;
-	width: 50vh;
 }
 .cartype-img img{
 	width: 100%;
@@ -939,6 +951,72 @@ ol li.on{
 }
 .compute-img img{
 	width: 100%;
+}
+.cartype-img{
+	position: relative;
+}
+.cartype-img button{
+	position: absolute;
+	min-width: 40px;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	opacity: 0;
+	transition: .25s;
+}
+.cartype-img:hover .lf{
+	opacity: 1;
+}
+.cartype-img:hover .rig{
+	opacity: 1;
+}
+.cartype-img span{
+	position: relative;
+}
+.cartype-img span.right{
+	right: 20px;
+}
+.bmw-finance .cartype-img .left::before{
+	content: '';
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	left: 0;
+	background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M23%2012l2%202-6%206%206%206-2%202-8-8z%22%2F%3E%3C%2Fsvg%3E");
+	background-size: 50px;
+    background-position: center;
+    background-color: rgba(200,200,200,.6);
+}
+.bmw-finance .cartype-img button:hover .left::before{
+    background-color: rgba(200,200,200,.8);
+}
+.bmw-finance .cartype-img button:hover .right::before{
+    background-color: rgba(200,200,200,.8);
+}
+.bmw-finance .cartype-img .right::before{
+	content: '';
+	width: 40px;
+	height: 40px;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 20px;
+	background: url("data:image/svg+xml;charset=US-ASCII,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2240%22%20height%3D%2240%22%20viewBox%3D%220%200%2040%2040%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M17%2028l-2-2%206-6-6-6%202-2%208%208z%22%2F%3E%3C%2Fsvg%3E");
+	background-size: 50px;
+    background-position: center;
+    background-color: rgba(200,200,200,.6);
+}
+
+.cartype-img .lf{
+	top: 0;
+	left: 0;
+}
+.cartype-img .rig{
+	top: 0;
+	right: 0;
 }
 .txtandview-x1{
 	margin-top: 75px;
